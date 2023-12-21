@@ -27,6 +27,13 @@ form {
   display: flex;
 }
 
+.footer {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 25px;
+  height: 0;
+  font-family: "Dancing Script", cursive;
+}
 .form-container {
   padding: 99px;
 
@@ -75,4 +82,18 @@ form {
   background-color: #ffffffad;
   cursor: pointer;
   color: black;
+}
+
+.surprise-button {
+  display: block;
+  margin:0 auto;
+padding:20px;
+border-radius: 3px;
+box-shadow: var(--box-shadow);
+font-size: 15px;
+
+
+
+
+
 }
