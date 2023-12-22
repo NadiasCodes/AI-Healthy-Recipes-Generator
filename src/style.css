@@ -2,6 +2,7 @@
   --bg-color: rgba(255, 255, 255, 0.559);
   --box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  --secondary-bg: #36453b;
 }
 
 body {
@@ -135,10 +136,33 @@ form {
 }
 
 /* Styling the second background & buttons */
-.surpise {
-  background-image: url("https://img.freepik.com/free-photo/cute-sea-lion-animal-christmas-card-background_53876-129023.jpg?w=900&t=st=1703242427~exp=1703243027~hmac=a7699cbc2e8cdb645a273ae272a42907b3023e45a9af4fcc0020b73c8357de1b");
+.christmas {
+  background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/108/073/original/bg.png?1703244560")
+    repeat center top fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
 }
-.surprise .form-container {
+
+.christmas .form-container {
+  background-color: var(--secondary-bg);
+  border: 2px solid rgba(207, 192, 192, 0.416);
 }
-.surpise .message {
+
+.christmas,
+.message .hint {
+  color: white;
+}
+
+.christmas .submit-button {
+  color: white;
+  background-color: #860a0a;
+}
+
+.christmas h1 {
+  background-color: var(--secondary-bg);
+  border: 2px solid rgba(207, 192, 192, 0.416);
+  font-family: "Dancing Script", cursive;
 }
