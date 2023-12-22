@@ -1,3 +1,14 @@
+function generateRecipe(event) {
+  event.preventDefault();
+  let recipeElement = document.querySelector("#text");
+  new Typewriter("#text", {
+    strings: ["Recipes"],
+    autoStart: true,
+    delay: 1,
+    cursor: "",
+  });
+}
+
 function changeTheme() {
   let body = document.querySelector("body");
   if (body.classList.contains("christmas")) {
@@ -14,9 +25,8 @@ function changeTheme() {
   }
 }
 
+let recipeFormElement = document.querySelector("#recipe-generator");
+recipeFormElement.addEventListener("submit", generateRecipe);
+
 let themeButton = document.querySelector(".surprise-button");
 themeButton.addEventListener("click", changeTheme);
-
-let recipeFormElement = document.querySelector("#recipe-generator");
-recipeFormElement;
-
