@@ -24,6 +24,7 @@ h1 {
   letter-spacing: 1.2px;
   font-family: "Enriqueta", serif;
   font-weight: 700;
+  border: 3px solid black;
 }
 
 form {
@@ -66,6 +67,7 @@ form {
   line-height: 20px;
   color: black;
   background-color: var(--bg-color);
+  border: 3px solid black;
 }
 .hint {
   line-height: 2;
@@ -116,7 +118,7 @@ form {
 }
 
 .surprise-button:hover {
-  background-color:#847f7f;
+  background-color: #847f7f;
   color: white;
   cursor: pointer;
 }
@@ -126,8 +128,8 @@ form {
   padding: 30px;
   font-weight: 500;
   border-left: 3px solid #b39d94;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: var(--box-shadow);
   border-radius: 6px;
   line-height: 50px;
- 
+  border-left: 3px solid #3e0505;
 }
