@@ -21,19 +21,27 @@ h1 {
   margin-top: 40px;
   box-shadow: var(--box-shadow);
   border-radius: 8px;
+  letter-spacing: 1.2px;
+  font-family: "Enriqueta", serif;
+  font-weight: 700;
 }
 
 form {
   display: flex;
 }
 
-.footer {
+.message {
   text-align: center;
-  margin-top: 100px;
+  margin-top: 50px;
   font-size: 25px;
   height: 0;
   font-family: "Dancing Script", cursive;
+  font-weight: 900;
 }
+.heart {
+  color: rgb(82, 8, 3);
+}
+
 .form-container {
   padding: 99px;
 
@@ -83,17 +91,43 @@ form {
   cursor: pointer;
   color: black;
 }
+.gift {
+  font-size: 30px;
+}
 
 .surprise-button {
   display: block;
-  margin:0 auto;
-padding:20px;
-border-radius: 3px;
-box-shadow: var(--box-shadow);
-font-size: 15px;
+  margin: 0 auto;
+  padding: 25px 25px;
+  border-radius: 3px;
+  box-shadow: var(--box-shadow);
+  font-size: 15px;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  font-family: "Bree Serif", serif;
+  font-weight: 300;
+  color: #262424;
+  box-shadow: rgb(184, 165, 165) 0px 20px 30px -10px;
+  transition: all 500ms ease-in-out;
+  text-align: center;
+  background-color: #d0ccc5;
+  margin-top: 150px;
+}
 
-
-
-
-
+.surprise-button:hover {
+  background-color:#847f7f;
+  color: white;
+  cursor: pointer;
+}
+.text {
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 30px;
+  font-weight: 500;
+  border-left: 3px solid #b39d94;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 6px;
+  line-height: 50px;
+ 
 }
