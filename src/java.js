@@ -17,6 +17,9 @@ function generateRecipe(event) {
   let prompt = `User instructions are: Generate a healthy recipe about ${instructionsInput.value}`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let textElement = document.querySelector("#text");
+  textElement.classList.remove("hidden");
+  textElement.innerHTML = `<div class="generating">⌛Generating a healthy recipe for you...❤ </div>`;
   axios.get(apiUrl).then(displayRecipes);
 }
 
@@ -27,13 +30,8 @@ function changeTheme() {
   } else {
     body.classList.add("christmas");
   }
-  let header = document.querySelector("h1");
+  let header = document.querySelector("#title");
   header.innerHTML = "Merry Christmas My Love";
-  if (h1.classList.contains("christmas")) {
-    h1.classList.remove("christmas");
-  } else {
-    h1.classList.add("christmas");
-  }
 }
 
 let recipeFormElement = document.querySelector("#recipe-generator");

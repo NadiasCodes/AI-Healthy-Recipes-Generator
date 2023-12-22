@@ -25,7 +25,7 @@ h1 {
   letter-spacing: 1.2px;
   font-family: "Enriqueta", serif;
   font-weight: 700;
-  border: 3px solid black;
+  border: 3px solid #584d0379;
 }
 
 form {
@@ -68,7 +68,7 @@ form {
   line-height: 20px;
   color: black;
   background-color: var(--bg-color);
-  border: 3px solid black;
+  border: 3px solid #584d0379;
 }
 .hint {
   line-height: 2;
@@ -132,8 +132,16 @@ form {
   box-shadow: var(--box-shadow);
   border-radius: 6px;
   line-height: 50px;
-  border-left: 3px solid #3e0505;
+  border-left: 3px solid #584d0379;
+   font-family: "Bree Serif", serif;
+   font-size: 19px;
 }
+
+.hidden {
+  display: none;
+}
+
+
 
 /* Styling the second background & buttons */
 .christmas {
@@ -144,11 +152,12 @@ form {
   -o-background-size: cover;
   background-size: cover;
   background-position: center;
+  color:white;
 }
 
 .christmas .form-container {
   background-color: var(--secondary-bg);
-  border: 2px solid rgba(207, 192, 192, 0.416);
+  border: 2px solid #584d0379;
 }
 
 .christmas,
@@ -163,6 +172,28 @@ form {
 
 .christmas h1 {
   background-color: var(--secondary-bg);
-  border: 2px solid rgba(207, 192, 192, 0.416);
+  border: 2px solid #584d0379;
   font-family: "Dancing Script", cursive;
+  color: white;
 }
+
+
+.christmas .text{
+  background-color:#36453bac
+}
+
+
+
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
