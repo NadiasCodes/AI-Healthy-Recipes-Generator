@@ -32,6 +32,10 @@ function changeTheme() {
   }
   let header = document.querySelector("#title");
   header.innerHTML = "Merry Christmas My Love";
+
+  let messageElement = document.querySelector("#message");
+
+  messageElement.innerHTML = "A christmas gift... for you, my precious Cutie ❤";
 }
 
 let recipeFormElement = document.querySelector("#recipe-generator");
