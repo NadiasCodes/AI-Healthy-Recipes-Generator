@@ -41,5 +41,5 @@ function changeTheme() {
 let recipeFormElement = document.querySelector("#recipe-generator");
 recipeFormElement.addEventListener("submit", generateRecipe);
 
-let themeButton = document.querySelector(".surprise-button");
+let themeButton = document.querySelector("#surprise-button");
 themeButton.addEventListener("click", changeTheme);
